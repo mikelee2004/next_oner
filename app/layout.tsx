@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
-import { Header } from "../components/header/Header"
-import { Footer } from "@/components/footer/Footer";
-import ReactQueryProvider from ""
+import { Header } from "./components/Header/index"
+import { Footer } from "./components/Footer/index";
+import ReactQueryProvider from "./providers/react-query";
 
 const roboto = Roboto({ 
   subsets: ["latin"],
