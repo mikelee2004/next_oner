@@ -5,6 +5,7 @@ import Image from 'next/image';
 export default function Catalog() {
     return (
         <div className={styles.catalog}>
+            
         </div>
 )
 }

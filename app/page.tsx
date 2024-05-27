@@ -1,13 +1,10 @@
-import Baner from "../public/banner.png"
-import Link from "next/link"
-import Image from "next/image"
-import styles from "./home.module.scss"
 import { ProductCard } from "./components/ProductCard"
+import ReactQueryProvider from "./providers/react-query"
 
 export default function Home() {
   return (
-      <main className={styles.homepage}>
-        <ProductCard />
-      </main>
+      <div>
+        <ProductCard id={0} name={""} image={""} price={0} />
+      </div>
   )
 }
