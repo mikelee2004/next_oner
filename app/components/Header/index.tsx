@@ -1,13 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
-import Logo from "../../public/logo.png"
-import Category from "../../public/category.svg"
-import Cart from "../../public/cart.png"
-import Quantity from "../../public/5.png"
-import Location from "../../public/location.png"
-import Phone from "../../public/phone-number.png"
-import User from "../../public/user.png"
-import Search from "../../public/Search.png"
+import Logo from "./../../../public/logo.png"
+import Category from "./../../../public/category.svg"
+import Cart from "./../../../public/cart.png"
+import Quantity from "./../../../public/5.png"
+import Location from "./../../../public/location.png"
+import Phone from "./../../../public/phone-number.png"
+import User from "./../../../public/user.png"
+import Search from "./../../../public/Search.png"
 
 import styles from "./header.module.scss";
  
@@ -19,7 +19,7 @@ export function Header() {
 {/* ВЕРХНЯЯ ЧАСТЬ ХЭДЕРА */}
 
                 <div className={styles.header_upper}>
-                    <Link href="/home">
+                    <Link href="/">
                         <Image src={Logo} alt="logo-oner"></Image>
                     </Link>
                     <div className={styles.header_upper_buttons}>
@@ -43,7 +43,7 @@ export function Header() {
 
                         <div className={styles.user}>
                             <Image src={User} alt="user-icon" className={styles.user_icon} />
-                            <Link href="/profile">Вход / Регистрация</Link>
+                            <Link href="/profile" className={styles.auth}>Вход / Регистрация</Link>
                         </div>
                         
                     </div>
