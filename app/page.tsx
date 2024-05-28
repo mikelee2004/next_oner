@@ -1,10 +1,12 @@
-import { ProductCard } from "./components/ProductCard"
+import { Banner } from "./components/Banner"
+import ProductCard from "./components/ProductCard/index"
+import Product from "./product/page"
 import ReactQueryProvider from "./providers/react-query"
 
 export default function Home() {
   return (
       <div>
-        <ProductCard id={0} name={""} image={""} price={0} />
+          <Banner />
       </div>
   )
 }

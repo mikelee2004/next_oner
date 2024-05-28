@@ -4,3 +4,7 @@ export type Product = {
     image: string
     price: number
 }
+
+export type ProductProps = {
+    product: Product
+}

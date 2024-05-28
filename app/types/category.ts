@@ -1,5 +1,8 @@
 export type Category = {
-    id: number
-    name: string
-    image: string
+    id: number;
+    image: string;
+    name: string;
+}
+export type CategoryProps = {
+    category: Category;
 }

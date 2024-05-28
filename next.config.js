@@ -1,7 +1,5 @@
-const path = require('path')
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'src/styles')],
+const nextConfig = {
+  images: {
+      domains: ["127.0.0.1"],
   },
-}
+};
